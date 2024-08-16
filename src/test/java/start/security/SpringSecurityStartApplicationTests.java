@@ -1,10 +1,10 @@
-package example.jwtstart;
+package start.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringSecurityJwtStartApplicationTests {
+class SpringSecurityStartApplicationTests {
 
     @Test
     void contextLoads() {
