@@ -1,5 +1,6 @@
 package start.security.config;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
 import start.security.jwt.JwtFilter;
 import start.security.jwt.JwtProvider;
 import start.security.jwt.LoginFilter;
@@ -29,7 +30,7 @@ public class SecurityConfig {
     private final JwtProvider jwtProvider;
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
